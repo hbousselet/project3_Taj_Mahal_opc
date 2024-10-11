@@ -33,7 +33,7 @@ struct WelcomeView: View {
                         Spacer()
                         Image("Logo")
                             .resizable()
-                            .background(Color(.sRGB, red: 154/255, green: 154/255, blue: 154/255, opacity: 1))
+                            .colorMultiply(Color(.sRGB, red: 154/255, green: 154/255, blue: 154/255, opacity: 1))
                             .frame(width: 39.99, height: 40)
                     }
                     .padding(.horizontal, 20)

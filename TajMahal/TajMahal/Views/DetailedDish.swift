@@ -12,7 +12,7 @@ struct DetailedDish: View {
     let name: String
     let description: String
     let price: Double
-    let spicy: Int
+    let spicy: SpiceLevel
     
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
@@ -42,7 +42,7 @@ struct DetailedDish: View {
                                 .font(Font.custom("PlusJakartaSans-Regular", size: 12))
                             Spacer()
                             //remplacer par vue Chili
-                            Text("chilli")
+                            SpiceVisual(spicy: spicy)
                                 .padding(.trailing, 20)
                         }
 

@@ -8,8 +8,8 @@
 import Foundation
 
 // Cette enumération répertorie 3 niveaux de piment
-enum SpiceLevel: String {
-    case light
+enum SpiceLevel: Int {
+    case light = 1
     case medium
     case hot
 }

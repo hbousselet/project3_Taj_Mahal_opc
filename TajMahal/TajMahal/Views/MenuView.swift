@@ -24,7 +24,7 @@ struct MenuView: View {
                                      name: viewModel.apetizerArray[index].name,
                                      description: viewModel.apetizerArray[index].description,
                                      price: 5.6,
-                                     spicy: 2)
+                                     spicy: viewModel.apetizerArray[index].spiceLevel)
                     }
                 }
                 Section(header: Text(sections[1])
@@ -35,13 +35,14 @@ struct MenuView: View {
                                          name: viewModel.apetizerArray[index].name,
                                          description: viewModel.apetizerArray[index].description,
                                          price: 5.6,
-                                         spicy: 2)
+                                         spicy: viewModel.mainCourseArray[index].spiceLevel)
                         }
                     }
             }
+            .navigationTitle("Menu")
         }
         .listRowSpacing(12)
-        .navigationTitle("Menu")
+
     }
 }
 
