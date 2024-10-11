@@ -22,7 +22,7 @@ struct LineView: View {
             Text(rightText)
         }
         .frame(width: 335, height: 15)
-        .foregroundStyle((Color(.sRGB, red: 102/255, green: 102/255, blue: 102/255, opacity: 1)))
+        .foregroundStyle(((Color(.sRGB, red: 102/255, green: 102/255, blue: 102/255, opacity: 1))))
         .font(Font.custom("PlusJakartaSans-Regular", size: 12))
         .fontWeight(.bold)
         .multilineTextAlignment(.trailing)
