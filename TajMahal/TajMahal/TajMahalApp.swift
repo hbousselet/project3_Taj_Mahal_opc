@@ -11,7 +11,7 @@ import SwiftUI
 struct TajMahalApp: App {
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            WelcomeView(viewModel: RestaurantInformations())
         }
     }
 }

@@ -33,10 +33,3 @@ struct LineView: View {
     LineView(imageName: "clock", leftText: "monday", rightText: "blbla")
 }
 
-
-//font-family: Plus Jakarta Sans;
-//font-size: 12px;
-//font-weight: 600;
-//line-height: 15.12px;
-//letter-spacing: -0.16500000655651093px;
-//text-align: right;

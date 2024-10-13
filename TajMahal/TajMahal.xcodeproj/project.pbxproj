@@ -17,6 +17,7 @@
 		A36620982CB8F5F400AB10BF /* SpiceVisual.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36620972CB8F5F400AB10BF /* SpiceVisual.swift */; };
 		A366209A2CB8F62000AB10BF /* DetailedDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36620992CB8F62000AB10BF /* DetailedDish.swift */; };
 		A3DC0A9D2CB80905000650FA /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC0A9C2CB80905000650FA /* LineView.swift */; };
+		A3DEEECB2CBA7AD900BCA8F5 /* DishDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEEECA2CBA7AD900BCA8F5 /* DishDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A36620972CB8F5F400AB10BF /* SpiceVisual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceVisual.swift; sourceTree = "<group>"; };
 		A36620992CB8F62000AB10BF /* DetailedDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedDish.swift; sourceTree = "<group>"; };
 		A3DC0A9C2CB80905000650FA /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		A3DEEECA2CBA7AD900BCA8F5 /* DishDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				A3DC0A9C2CB80905000650FA /* LineView.swift */,
 				A36620972CB8F5F400AB10BF /* SpiceVisual.swift */,
 				A36620992CB8F62000AB10BF /* DetailedDish.swift */,
+				A3DEEECA2CBA7AD900BCA8F5 /* DishDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DEEECB2CBA7AD900BCA8F5 /* DishDetails.swift in Sources */,
 				A36620982CB8F5F400AB10BF /* SpiceVisual.swift in Sources */,
 				A366209A2CB8F62000AB10BF /* DetailedDish.swift in Sources */,
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
@@ -306,7 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = 22S6S46553;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -319,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amandinecousin.TajMahal;
+				PRODUCT_BUNDLE_IDENTIFIER = "hbo-try-opc-project3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,7 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TajMahal/Preview Content\"";
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = 22S6S46553;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TajMahal/Info.plist;
@@ -348,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.amandinecousin.TajMahal;
+				PRODUCT_BUNDLE_IDENTIFIER = "hbo-try-opc-project3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

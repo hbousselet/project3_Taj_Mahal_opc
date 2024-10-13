@@ -24,32 +24,35 @@ struct DetailedDish: View {
                         .resizable()
                         .cornerRadius(15)
                         .frame(width: 112, height: 86)
-                        .padding(.leading, 10)
-                        .padding(.vertical, 10)
+                        .padding(.leading, 12)
+                        .padding(.vertical, 12)
                     Spacer()
                     VStack(alignment: .leading) {
                         Text(name)
                             .font(Font.custom("PlusJakartaSans-Regular", size: 14))
+                            .fontWeight(.black)
                             .padding(.top, 10)
                         Spacer()
                         Text(description)
                             .font(Font.custom("PlusJakartaSans-Regular", size: 12))
-                            .lineSpacing(1)
+                            .fontWeight(.ultraLight)
                             .padding(.top, 10)
+                            .lineLimit(2)
                         Spacer()
                         HStack {
                             Text("\(price.description)€")
                                 .font(Font.custom("PlusJakartaSans-Regular", size: 12))
+                                .fontWeight(.black)
                             Spacer()
-                            //remplacer par vue Chili
                             SpiceVisual(spicy: spicy)
-                                .padding(.trailing, 20)
+                                .padding(.trailing, 1)
                         }
 
                         Spacer()
                     }
                     .fontWeight(.heavy)
                     .foregroundStyle((Color(.sRGB, red: 102/255, green: 102/255, blue: 102/255, opacity: 1)))
+                    .padding(.leading, 8)
                 }
                 )
     }

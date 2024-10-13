@@ -15,7 +15,7 @@ enum SpiceLevel: Int {
 }
 
 // Représente l'objet "plat", qui figure sur la carte du menu
-struct Dish {
+struct Dish: Hashable {
     var name: String
     var description: String
     var allergens: String
