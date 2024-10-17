@@ -11,6 +11,7 @@ struct DishDetails: View {
     let model: Dish
     let spiceWidth: CGFloat = 74
     let spiceHeight: CGFloat = 22
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack {
@@ -45,11 +46,23 @@ struct DishDetails: View {
         .font(Font.custom("PlusJakartaSans-Regular", size: 12))
         .foregroundStyle(((Color(.sRGB, red: 102/255, green: 102/255, blue: 102/255, opacity: 1))))
         .navigationTitle(model.name)
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button(action: {
+                    dismiss()
+                }, label: {
+                    Image(systemName: "chevron.left")
+                        .foregroundStyle(Color.logo)
+                })
+            }
+        }
     }
 }
 
 extension CGFloat {
-    static let inset: CGFloat = 20
+    static let inset: CGFloat = 12
 }
 
 #Preview {

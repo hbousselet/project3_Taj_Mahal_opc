@@ -14,7 +14,8 @@ struct SpiceVisual: View {
         
         RoundedRectangle(cornerRadius: 12)
             .frame(width: 74, height: 22)
-            .opacity(0.2)
+            .opacity(1)
+            .foregroundStyle(.white)
             .overlay(
                 HStack {
                     ForEach(0..<3) { index in
