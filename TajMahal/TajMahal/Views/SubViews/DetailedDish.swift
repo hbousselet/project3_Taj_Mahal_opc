@@ -48,7 +48,7 @@ struct DishMenuAssembler: View {
                     .foregroundStyle(Color.bodyInformation)
                     .padding(.leading, .MenuView.DetailedDish.insetBetweenImageAndVstack)
                 }
-                    .padding(.vertical, .MenuView.DetailedDish.verticalInset)
+                    .padding(.vertical, .MenuView.DetailedDish.verticalInset    )
 
 
                 )

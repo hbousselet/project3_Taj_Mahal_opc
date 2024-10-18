@@ -12,8 +12,8 @@ struct SpiceVisual: View {
     
     var body: some View {
         
-        RoundedRectangle(cornerRadius: 12)
-            .frame(width: 74, height: 22)
+        RoundedRectangle(cornerRadius: .SpiceVisual.cornerRadius)
+            .frame(width: .SpiceVisual.rectangleWidth, height: .SpiceVisual.rectangleHeight)
             .opacity(1)
             .foregroundStyle(.white)
             .overlay(
@@ -21,7 +21,7 @@ struct SpiceVisual: View {
                     ForEach(0..<3) { index in
                         if index < spicy.rawValue {
                             Image("pepper")
-                                .colorMultiply(Color(.sRGB, red: 207/255, green: 47/255, blue: 47/255, opacity: 1))
+                                .colorMultiply(Color.redCustomColor)
                         }
                         else {
                             Image("pepper")

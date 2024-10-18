@@ -22,7 +22,7 @@ struct MenuView: View {
     
     private func createSection(name: String, dish: [Dish]) -> some View {
         Section(header: Text(name.capitalized)
-            .padding(.leading, -20)
+            .padding(.leading, .MenuView.correctHeaderLeadingInset)
             .font(.jakarta(size: 14))
             .foregroundStyle(Color.bodyInformation)) {
                 ForEach(0..<dish.count, id:\.self) { index in

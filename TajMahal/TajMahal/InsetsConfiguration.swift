@@ -19,6 +19,7 @@ extension CGFloat {
     
     struct MenuView {
         static let lineSpacing: CGFloat = 12
+        static let correctHeaderLeadingInset: CGFloat = -20
         
         struct DetailedDish {
             static let cornerRadius: CGFloat = 10
@@ -30,6 +31,13 @@ extension CGFloat {
             static let verticalInset: CGFloat = 12
             
         }
+    }
+    
+    struct SpiceVisual {
+        static let cornerRadius: CGFloat = 10
+        static let rectangleHeight: CGFloat = 22
+        static let rectangleWidth: CGFloat = 74
+        
     }
     static let title: CGFloat = 18
     static let body: CGFloat = 12

@@ -29,7 +29,7 @@ struct WelcomeView: View {
                                 .fontWeight(.black)
                                 .foregroundStyle(Color.title)
                         }
-                        .foregroundStyle(Color.buttonBackground)
+                        .foregroundStyle(Color.redCustomColor)
                         Spacer()
                         Image("Logo")
                             .resizable()
@@ -61,7 +61,7 @@ struct WelcomeView: View {
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(
                                 RoundedRectangle(cornerRadius: .WelcomeView.buttonCorners)
-                                    .fill(Color.buttonBackground)
+                                    .fill(Color.redCustomColor)
                                     .frame(height: .WelcomeView.logoDimensions)
                             )
                             .font(.jakarta(size: .buttonToEndUPInMenu))

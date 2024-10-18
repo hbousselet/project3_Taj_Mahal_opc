@@ -20,7 +20,7 @@ extension Color {
         Color(.sRGB, red: 154/255, green: 154/255, blue: 154/255, opacity: 1)
     }
     
-    static var buttonBackground: Color {
+    static var redCustomColor: Color {
         Color(.sRGB, red: 207/255, green: 47/255, blue: 47/255, opacity: 1)
     }
 }
