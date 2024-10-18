@@ -21,11 +21,11 @@ struct WelcomeView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text("Restaurant Indien")
-                                .font(.jakarta(size: .body))
+                                .font(.jakarta(size: 12))
                                 .fontWeight(.semibold)
                                 .foregroundStyle(Color.bodyInformation)
                             Text(viewModel.restaurantName)
-                                .font(.jakarta(size: .title))
+                                .font(.jakarta(size: 18))
                                 .fontWeight(.black)
                                 .foregroundStyle(Color.title)
                         }
@@ -64,7 +64,7 @@ struct WelcomeView: View {
                                     .fill(Color.redCustomColor)
                                     .frame(height: .WelcomeView.logoDimensions)
                             )
-                            .font(.jakarta(size: .buttonToEndUPInMenu))
+                            .font(.jakarta(size: 16))
                             .foregroundStyle(.white)
                     }
                     .padding(.top, .WelcomeView.topInsetBetweenElements)

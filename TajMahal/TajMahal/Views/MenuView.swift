@@ -30,7 +30,10 @@ struct MenuView: View {
                         DishMenuAssembler(imageName: dish[index].imageName,
                                           name: dish[index].name,
                                           description: dish[index].description,
-                                          price: 5.6,
+                                          price: dish[index].price.formatted(
+                                            .currency(code: "EUR")
+                                            .locale(Locale(identifier: "fr_FR"))
+                                            ),
                                           spicy: dish[index].spiceLevel)
                         NavigationLink {
                             DishDetailsView(model: dish[index])

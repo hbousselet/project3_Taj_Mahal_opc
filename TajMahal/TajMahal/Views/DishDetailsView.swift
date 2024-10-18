@@ -19,8 +19,8 @@ struct DishDetailsView: View {
                 .overlay(
                     GeometryReader { geometry in
                         SpiceVisual(spicy: model.spiceLevel)
-                            .position(x: geometry.size.width - .SpiceVisual.rectangleWidth/2 - .DishDetailsView.horizontalInset,
-                                      y: .SpiceVisual.rectangleHeight/2 + .DishDetailsView.horizontalInset)
+                            .position(x: geometry.size.width - .SpiceVisual.rectangleWidth/2 - .DishDetailsView.spiceVisualInset,
+                                      y: .SpiceVisual.rectangleHeight/2 + .DishDetailsView.spiceVisualInset)
                     }
                 )
             VStack(alignment: .leading) {
@@ -48,6 +48,10 @@ struct DishDetailsView: View {
     }
 }
 
+extension CGFloat {
+    static let inset: CGFloat = 20
+}
+
 #Preview {
-    DishDetailsView(model: Dish(name: "Chicken Tikka Masala", description: "Poulet mariné, grillé et servi dans une sauce masala", allergens: "Lait, yaourt, beurre clarifié (ghee), crème fraîche, crème de coco, ail, oignon", ingredients: "Huile, beurre clarifié (ghee), oignon, ail, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre, tomates en purée, crème fraîche, crème de coco, sel, coriandre fraîche", spiceLevel: .medium, imageName: "Tikka Masala"))
+    DishDetailsView(model: Dish(name: "Chicken Tikka Masala", description: "Poulet mariné, grillé et servi dans une sauce masala", allergens: "Lait, yaourt, beurre clarifié (ghee), crème fraîche, crème de coco, ail, oignon", ingredients: "Huile, beurre clarifié (ghee), oignon, ail, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre, tomates en purée, crème fraîche, crème de coco, sel, coriandre fraîche", spiceLevel: .medium, imageName: "Tikka Masala", price: 12.50))
 }

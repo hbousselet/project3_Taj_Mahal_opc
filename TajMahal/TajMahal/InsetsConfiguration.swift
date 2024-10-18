@@ -45,12 +45,7 @@ extension CGFloat {
         static let cornerRadius: CGFloat = 10
         static let topInset: CGFloat = 10
         static let vstackTopInset: CGFloat = 12
+        static let spiceVisualInset: CGFloat = 12
         
     }
-    
-    
-    
-    static let title: CGFloat = 18
-    static let body: CGFloat = 12
-    static let buttonToEndUPInMenu: CGFloat = 16
 }

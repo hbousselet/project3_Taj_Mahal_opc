@@ -11,7 +11,7 @@ struct DishMenuAssembler: View {
     let imageName: String
     let name: String
     let description: String
-    let price: Double
+    let price: String
     let spicy: SpiceLevel
     
     var body: some View {
@@ -35,7 +35,7 @@ struct DishMenuAssembler: View {
                             .padding(.top)
                             .lineLimit(2...4)
                         HStack {
-                            Text("\(price.description)€")
+                            Text("\(price.description)")
                                 .font(.jakarta(size: 12))
                                 .fontWeight(.heavy)
                             Spacer()
@@ -48,7 +48,7 @@ struct DishMenuAssembler: View {
                     .foregroundStyle(Color.bodyInformation)
                     .padding(.leading, .MenuView.DetailedDish.insetBetweenImageAndVstack)
                 }
-                    .padding(.vertical, .MenuView.DetailedDish.verticalInset    )
+                    .padding(.vertical, .MenuView.DetailedDish.verticalInset)
 
 
                 )
@@ -59,6 +59,6 @@ struct DishMenuAssembler: View {
     DishMenuAssembler(imageName: "Samosas",
                       name: "Samosas aux légumes",
                       description: "Délicieux chaussons frits garnis de légumes épicés",
-                      price: 12,
+                      price: "12",
                       spicy: .light)
 }
