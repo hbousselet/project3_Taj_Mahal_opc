@@ -35,24 +35,24 @@ struct WelcomeView: View {
                             .resizable()
                             .scaledToFit()
                             .colorMultiply(Color.logo)
-                            .frame(width: .MenuView.logoDimensions, height: .MenuView.logoDimensions)
+                            .frame(width: .WelcomeView.logoDimensions, height: .WelcomeView.logoDimensions)
                     }
-                    .padding(.top, .MenuView.topInsetBetweenElements)
+                    .padding(.top, .WelcomeView.topInsetBetweenElements)
                     VStack {
                         RestaurantInformationLineViewAssembler(imageName: "customeClock", leftText: "Mardi", rightText: "11h30 - 14h30・ 18h30 - 22h00")
                             .padding(.top)
                             .padding(.leading, -2)
                         RestaurantInformationLineViewAssembler(imageName: "fried_pan", leftText: "Type de Service", rightText: "À emporter")
-                            .padding(.top, .MenuView.topInsetBetweenInformationLines)
+                            .padding(.top, .WelcomeView.topInsetBetweenInformationLines)
                             .padding(.leading, -2)
                         RestaurantInformationLineViewAssembler(imageName: "location", leftText: "12  Avenue de la Brique - 75010 Paris", rightText: "")
-                            .padding(.top, .MenuView.topInsetBetweenInformationLines)
+                            .padding(.top, .WelcomeView.topInsetBetweenInformationLines)
                         RestaurantInformationLineViewAssembler(imageName: "website", leftText: "www.tajmahal.fr", rightText: "")
-                            .padding(.top, .MenuView.topInsetBetweenInformationLines)
+                            .padding(.top, .WelcomeView.topInsetBetweenInformationLines)
                         RestaurantInformationLineViewAssembler(imageName: "phoneFig", leftText: "06 12 34 56 78", rightText: "")
-                            .padding(.top, .MenuView.topInsetBetweenInformationLines)
+                            .padding(.top, .WelcomeView.topInsetBetweenInformationLines)
                     }
-                    .padding(.top, .MenuView.topInsetBetweenElements)
+                    .padding(.top, .WelcomeView.topInsetBetweenElements)
                     Spacer()
                     NavigationLink  {
                         MenuView(viewModel: viewModel)
@@ -60,17 +60,17 @@ struct WelcomeView: View {
                         Text("Accéder au menu")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(
-                                RoundedRectangle(cornerRadius: .MenuView.buttonCorners)
+                                RoundedRectangle(cornerRadius: .WelcomeView.buttonCorners)
                                     .fill(Color.buttonBackground)
-                                    .frame(height: .MenuView.logoDimensions)
+                                    .frame(height: .WelcomeView.logoDimensions)
                             )
                             .font(.jakarta(size: .buttonToEndUPInMenu))
                             .foregroundStyle(.white)
                     }
-                    .padding(.top, .MenuView.topInsetBetweenElements)
+                    .padding(.top, .WelcomeView.topInsetBetweenElements)
                     .transition(.opacity)
                 }
-                .padding(.horizontal, .MenuView.horizontalInset)
+                .padding(.horizontal, .WelcomeView.horizontalInset)
             }
         }
     }

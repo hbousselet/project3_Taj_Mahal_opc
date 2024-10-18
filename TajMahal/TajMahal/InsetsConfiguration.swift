@@ -8,13 +8,28 @@
 import Foundation
 
 extension CGFloat {
-    struct MenuView {
+    struct WelcomeView {
         static let horizontalInset: CGFloat = 20
         static let topInsetBetweenElements: CGFloat = 32
         static let topInsetBetweenInformationLines: CGFloat = 14
         static let logoDimensions: CGFloat = 40
         static let buttonCorners: CGFloat = 12
 
+    }
+    
+    struct MenuView {
+        static let lineSpacing: CGFloat = 12
+        
+        struct DetailedDish {
+            static let cornerRadius: CGFloat = 10
+            static let rectangleHeight: CGFloat = 110
+            static let imageHeight: CGFloat = 86
+            static let imageWidth: CGFloat = 112
+            static let hstackTrailling: CGFloat = 16
+            static let insetBetweenImageAndVstack: CGFloat = 21
+            static let verticalInset: CGFloat = 12
+            
+        }
     }
     static let title: CGFloat = 18
     static let body: CGFloat = 12

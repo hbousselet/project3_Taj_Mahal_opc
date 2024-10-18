@@ -15,16 +15,16 @@ struct DishMenuAssembler: View {
     let spicy: SpiceLevel
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .frame(height: 110)
+        RoundedRectangle(cornerRadius: .MenuView.DetailedDish.cornerRadius)
+            .frame(height: .MenuView.DetailedDish.rectangleHeight)
             .opacity(0)
             .overlay(
                 HStack {
                     Image(imageName)
                         .resizable()
-                        .frame(width: 112, height: 86)
+                        .frame(width: .MenuView.DetailedDish.imageWidth, height: .MenuView.DetailedDish.imageHeight)
                         .scaledToFit()
-                        .cornerRadius(12)
+                        .cornerRadius(.MenuView.DetailedDish.cornerRadius)
                     VStack(alignment: .leading) {
                         Text(name)
                             .font(.jakarta(size: 14))
@@ -42,13 +42,13 @@ struct DishMenuAssembler: View {
                             SpiceVisual(spicy: spicy)
                         }
                         .padding(.top)
-                        .padding(.trailing, 16)
+                        .padding(.trailing, .MenuView.DetailedDish.hstackTrailling)
 
                     }
                     .foregroundStyle(Color.bodyInformation)
-                    .padding(.leading, 24)
+                    .padding(.leading, .MenuView.DetailedDish.insetBetweenImageAndVstack)
                 }
-                    .padding(.vertical, 12)
+                    .padding(.vertical, .MenuView.DetailedDish.verticalInset)
 
 
                 )

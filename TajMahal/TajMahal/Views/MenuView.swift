@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-// Menu sous forme de liste
 struct MenuView: View {
-    // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
     @ObservedObject var viewModel: RestaurantInformations
     let sections = ["Entrées", "Plats principaux"]
     
@@ -18,7 +16,7 @@ struct MenuView: View {
             createSection(name: sections[0], dish: viewModel.apetizerArray)
             createSection(name: sections[1], dish: viewModel.mainCourseArray)
         }
-        .listRowSpacing(12)
+        .listRowSpacing(.MenuView.lineSpacing)
         .applyNavigationLogic(title: "Menu")
     }
     
