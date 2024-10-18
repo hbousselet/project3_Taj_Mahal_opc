@@ -17,15 +17,16 @@ struct WelcomeView: View {
                 VStack {
                     Image("TajMahal")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                     HStack {
                         VStack(alignment: .leading) {
                             Text("Restaurant Indien")
                                 .font(.jakarta(size: .body))
-                            //                            .fontWeight(.heavy)
+                                .fontWeight(.semibold)
                                 .foregroundStyle(Color.bodyInformation)
                             Text(viewModel.restaurantName)
                                 .font(.jakarta(size: .title))
+                                .fontWeight(.black)
                                 .foregroundStyle(Color.title)
                         }
                         .foregroundStyle(Color.buttonBackground)
@@ -34,23 +35,24 @@ struct WelcomeView: View {
                             .resizable()
                             .scaledToFit()
                             .colorMultiply(Color.logo)
-                        //est-ce que je garde ce cadre pour l'image ?
-                            .frame(width: 40, height: 40)
+                            .frame(width: .MenuView.logoDimensions, height: .MenuView.logoDimensions)
                     }
-                    .padding(.top, 32)
+                    .padding(.top, .MenuView.topInsetBetweenElements)
                     VStack {
                         RestaurantInformationLineViewAssembler(imageName: "customeClock", leftText: "Mardi", rightText: "11h30 - 14h30・ 18h30 - 22h00")
                             .padding(.top)
+                            .padding(.leading, -2)
                         RestaurantInformationLineViewAssembler(imageName: "fried_pan", leftText: "Type de Service", rightText: "À emporter")
-                            .padding(.top)
+                            .padding(.top, .MenuView.topInsetBetweenInformationLines)
+                            .padding(.leading, -2)
                         RestaurantInformationLineViewAssembler(imageName: "location", leftText: "12  Avenue de la Brique - 75010 Paris", rightText: "")
-                            .padding(.top)
+                            .padding(.top, .MenuView.topInsetBetweenInformationLines)
                         RestaurantInformationLineViewAssembler(imageName: "website", leftText: "www.tajmahal.fr", rightText: "")
-                            .padding(.top)
+                            .padding(.top, .MenuView.topInsetBetweenInformationLines)
                         RestaurantInformationLineViewAssembler(imageName: "phoneFig", leftText: "06 12 34 56 78", rightText: "")
-                            .padding(.top)
+                            .padding(.top, .MenuView.topInsetBetweenInformationLines)
                     }
-                    .padding(.top, 32)
+                    .padding(.top, .MenuView.topInsetBetweenElements)
                     Spacer()
                     NavigationLink  {
                         MenuView(viewModel: viewModel)
@@ -58,26 +60,20 @@ struct WelcomeView: View {
                         Text("Accéder au menu")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(
-                                RoundedRectangle(cornerRadius: 10)
+                                RoundedRectangle(cornerRadius: .MenuView.buttonCorners)
                                     .fill(Color.buttonBackground)
-                                    .frame(height: 40)
+                                    .frame(height: .MenuView.logoDimensions)
                             )
                             .font(.jakarta(size: .buttonToEndUPInMenu))
                             .foregroundStyle(.white)
                     }
-                    .padding(.top, 32)
+                    .padding(.top, .MenuView.topInsetBetweenElements)
                     .transition(.opacity)
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, .MenuView.horizontalInset)
             }
         }
     }
-}
-// crer un fichier par extension
-extension CGFloat {
-    static let title: CGFloat = 18
-    static let body: CGFloat = 12
-    static let buttonToEndUPInMenu: CGFloat = 16
 }
 
 #Preview {

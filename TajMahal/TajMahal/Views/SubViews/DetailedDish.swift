@@ -27,15 +27,17 @@ struct DishMenuAssembler: View {
                         .cornerRadius(12)
                     VStack(alignment: .leading) {
                         Text(name)
-                            .font(.jakarta(size: 14, style: .title2))
+                            .font(.jakarta(size: 14))
                             .fontWeight(.heavy)
                         Text(description)
                             .font(.jakarta(size: 12))
+                            .fontWeight(.semibold)
                             .padding(.top)
                             .lineLimit(2...4)
                         HStack {
                             Text("\(price.description)€")
                                 .font(.jakarta(size: 12))
+                                .fontWeight(.heavy)
                             Spacer()
                             SpiceVisual(spicy: spicy)
                         }

@@ -19,6 +19,7 @@
 		A39031842CC0593600DAB4C9 /* FontConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39031832CC0593600DAB4C9 /* FontConfiguration.swift */; };
 		A39031862CC0596300DAB4C9 /* ColorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39031852CC0596300DAB4C9 /* ColorConfiguration.swift */; };
 		A3AC116C2CC2421600F8F191 /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC116B2CC2421600F8F191 /* NavigationModifier.swift */; };
+		A3AC116E2CC24ED900F8F191 /* InsetsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC116D2CC24ED900F8F191 /* InsetsConfiguration.swift */; };
 		A3DC0A9D2CB80905000650FA /* InformationLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC0A9C2CB80905000650FA /* InformationLineView.swift */; };
 		A3DEEECB2CBA7AD900BCA8F5 /* DishDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEEECA2CBA7AD900BCA8F5 /* DishDetails.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		A39031832CC0593600DAB4C9 /* FontConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConfiguration.swift; sourceTree = "<group>"; };
 		A39031852CC0596300DAB4C9 /* ColorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConfiguration.swift; sourceTree = "<group>"; };
 		A3AC116B2CC2421600F8F191 /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
+		A3AC116D2CC24ED900F8F191 /* InsetsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsConfiguration.swift; sourceTree = "<group>"; };
 		A3DC0A9C2CB80905000650FA /* InformationLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationLineView.swift; sourceTree = "<group>"; };
 		A3DEEECA2CBA7AD900BCA8F5 /* DishDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
 				A39031852CC0596300DAB4C9 /* ColorConfiguration.swift */,
 				A39031832CC0593600DAB4C9 /* FontConfiguration.swift */,
+				A3AC116D2CC24ED900F8F191 /* InsetsConfiguration.swift */,
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
 				428D2B502AFA851900BBA4F5 /* Model.swift */,
 				42E9DCB32AF11138007CE7D0 /* Preview Content */,
@@ -192,6 +195,7 @@
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
 				A3DC0A9D2CB80905000650FA /* InformationLineView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
+				A3AC116E2CC24ED900F8F191 /* InsetsConfiguration.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				A39031862CC0596300DAB4C9 /* ColorConfiguration.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,

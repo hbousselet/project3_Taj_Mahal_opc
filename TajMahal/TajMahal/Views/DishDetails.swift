@@ -16,7 +16,7 @@ struct DishDetails: View {
         VStack {
             Image(model.imageName)
                 .resizable()
-                .scaledToFit()
+                .aspectRatio(contentMode: .fit)
                 .cornerRadius(15)
                 .overlay(
                     GeometryReader { geometry in
@@ -27,15 +27,17 @@ struct DishDetails: View {
                 )
             VStack(alignment: .leading) {
                 Text("Alergènes")
-                    .font(.callout)
+                    .fontWeight(.heavy)
                 Text(model.allergens)
+                    .fontWeight(.semibold)
                     .padding(.top, 10)
                 Divider()
                     .padding(.top, 10)
                 Text("Ingrédients")
-                    .font(.callout)
+                    .fontWeight(.heavy)
                     .padding(.top, 10)
                 Text(model.ingredients)
+                    .fontWeight(.semibold)
                     .padding(.top, 10)
             }
             .padding(.top, 12)
@@ -49,7 +51,7 @@ struct DishDetails: View {
 }
 
 extension CGFloat {
-    static let inset: CGFloat = 12
+    static let inset: CGFloat = 20
 }
 
 #Preview {
