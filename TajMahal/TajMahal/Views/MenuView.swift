@@ -33,7 +33,7 @@ struct MenuView: View {
                                           price: 5.6,
                                           spicy: dish[index].spiceLevel)
                         NavigationLink {
-                            DishDetails(model: dish[index])
+                            DishDetailsView(model: dish[index])
                         } label: {
                             EmptyView()
                                 .frame(width: 0, height: 0)

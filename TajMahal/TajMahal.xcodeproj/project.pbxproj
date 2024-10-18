@@ -21,7 +21,7 @@
 		A3AC116C2CC2421600F8F191 /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC116B2CC2421600F8F191 /* NavigationModifier.swift */; };
 		A3AC116E2CC24ED900F8F191 /* InsetsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC116D2CC24ED900F8F191 /* InsetsConfiguration.swift */; };
 		A3DC0A9D2CB80905000650FA /* InformationLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC0A9C2CB80905000650FA /* InformationLineView.swift */; };
-		A3DEEECB2CBA7AD900BCA8F5 /* DishDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEEECA2CBA7AD900BCA8F5 /* DishDetails.swift */; };
+		A3DEEECB2CBA7AD900BCA8F5 /* DishDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEEECA2CBA7AD900BCA8F5 /* DishDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		A3AC116B2CC2421600F8F191 /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
 		A3AC116D2CC24ED900F8F191 /* InsetsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsConfiguration.swift; sourceTree = "<group>"; };
 		A3DC0A9C2CB80905000650FA /* InformationLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationLineView.swift; sourceTree = "<group>"; };
-		A3DEEECA2CBA7AD900BCA8F5 /* DishDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetails.swift; sourceTree = "<group>"; };
+		A3DEEECA2CBA7AD900BCA8F5 /* DishDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				A39031742CBFAA5200DAB4C9 /* SubViews */,
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
-				A3DEEECA2CBA7AD900BCA8F5 /* DishDetails.swift */,
+				A3DEEECA2CBA7AD900BCA8F5 /* DishDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DEEECB2CBA7AD900BCA8F5 /* DishDetails.swift in Sources */,
+				A3DEEECB2CBA7AD900BCA8F5 /* DishDetailsView.swift in Sources */,
 				A36620982CB8F5F400AB10BF /* SpiceVisual.swift in Sources */,
 				A366209A2CB8F62000AB10BF /* DetailedDish.swift in Sources */,
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
