@@ -45,7 +45,7 @@ struct DishMenuAssembler: View {
                         .padding(.trailing, .MenuView.DetailedDish.hstackTrailling)
 
                     }
-                    .foregroundStyle(Color.bodyInformation)
+                    .foregroundStyle(Color.body)
                     .padding(.leading, .MenuView.DetailedDish.insetBetweenImageAndVstack)
                 }
                     .padding(.vertical, .MenuView.DetailedDish.verticalInset)

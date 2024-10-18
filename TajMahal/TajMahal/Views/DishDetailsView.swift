@@ -43,8 +43,8 @@ struct DishDetailsView: View {
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
         .padding(.horizontal, .DishDetailsView.horizontalInset)
         .font(.jakarta(size: 12))
-        .foregroundStyle(Color.bodyInformation)
-        .applyNavigationLogic(title: model.name)
+        .foregroundStyle(Color.body)
+        .applyNavigationLogic(title: model.name, isInDishDetails: true)
     }
 }
 

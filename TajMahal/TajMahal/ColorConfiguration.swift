@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Color {
-    static var bodyInformation: Color {
+    static var body: Color {
         Color(.sRGB, red: 102/255, green: 102/255, blue: 102/255, opacity: 1)
     }
     

@@ -10,10 +10,10 @@ import SwiftUI
 struct NavigationModifier: ViewModifier {
     @Environment(\.dismiss) private var dismiss
     let title: String
+    let isInDishDetails: Bool
 
     func body(content: Content) -> some View {
         content
-            .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
             .toolbar {
@@ -21,8 +21,16 @@ struct NavigationModifier: ViewModifier {
                     Button(action: {
                         dismiss()
                     }, label: {
-                        Image(systemName: "chevron.left")
-                            .foregroundStyle(Color.logo)
+                        HStack {
+                            Image(systemName: "chevron.left")
+                                .foregroundStyle(Color.logo)
+                            if isInDishDetails {
+                                Text(title)
+                                    .font(.jakarta(size: 18))
+                                    .fontWeight(.black)
+                                    .foregroundStyle(Color.title)
+                            }
+                        }
                     })
                 }
             }
@@ -30,7 +38,7 @@ struct NavigationModifier: ViewModifier {
 }
 
 extension View {
-    func applyNavigationLogic(title: String) -> some View {
-        modifier(NavigationModifier(title: title))
+    func applyNavigationLogic(title: String, isInDishDetails: Bool) -> some View {
+        modifier(NavigationModifier(title: title, isInDishDetails: isInDishDetails))
     }
 }

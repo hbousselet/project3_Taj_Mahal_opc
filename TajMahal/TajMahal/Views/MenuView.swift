@@ -17,14 +17,15 @@ struct MenuView: View {
             createSection(name: sections[1], dish: viewModel.mainCourseArray)
         }
         .listRowSpacing(.MenuView.lineSpacing)
-        .applyNavigationLogic(title: "Menu")
+        .applyNavigationLogic(title: "Menu", isInDishDetails: false)
+        .navigationTitle("Menu")
     }
     
     private func createSection(name: String, dish: [Dish]) -> some View {
         Section(header: Text(name.capitalized)
             .padding(.leading, .MenuView.correctHeaderLeadingInset)
             .font(.jakarta(size: 14))
-            .foregroundStyle(Color.bodyInformation)) {
+            .foregroundStyle(Color.body)) {
                 ForEach(0..<dish.count, id:\.self) { index in
                     ZStack {
                         DishMenuAssembler(imageName: dish[index].imageName,

@@ -23,7 +23,7 @@ struct WelcomeView: View {
                             Text("Restaurant Indien")
                                 .font(.jakarta(size: 12))
                                 .fontWeight(.semibold)
-                                .foregroundStyle(Color.bodyInformation)
+                                .foregroundStyle(Color.body)
                             Text(viewModel.restaurantName)
                                 .font(.jakarta(size: 18))
                                 .fontWeight(.black)
