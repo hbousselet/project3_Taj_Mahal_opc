@@ -11,7 +11,6 @@ import SwiftUI
 struct MenuView: View {
     // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
     @ObservedObject var viewModel: RestaurantInformations
-    @Environment(\.dismiss) private var dismiss
     let sections = ["Entrées", "Plats principaux"]
     
     var body: some View {
@@ -20,24 +19,12 @@ struct MenuView: View {
             createSection(name: sections[1], dish: viewModel.mainCourseArray)
         }
         .listRowSpacing(12)
-        .navigationTitle("Menu")
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(true)
-        //créer un viewmodifier
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button(action: {
-                    dismiss()
-                }, label: {
-                    Image(systemName: "chevron.left")
-                        .foregroundStyle(Color.logo)
-                })
-            }
-        }
+        .applyNavigationLogic(title: "Menu")
     }
     
     private func createSection(name: String, dish: [Dish]) -> some View {
-        Section(header: Text(name)
+        Section(header: Text(name.capitalized)
+            .padding(.leading, -20)
             .font(.jakarta(size: 14))
             .foregroundStyle(Color.bodyInformation)) {
                 ForEach(0..<dish.count, id:\.self) { index in
@@ -51,6 +38,7 @@ struct MenuView: View {
                             DishDetails(model: dish[index])
                         } label: {
                             EmptyView()
+                                .frame(width: 0, height: 0)
                         }.opacity(0)
                     }
             }
